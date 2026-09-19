@@ -2,26 +2,25 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#123c67">
 <meta name="description" content="Back of Head Book — a smaller, stranger social network.">
-<title>Back of Head Book</title>
+<title>back of head book</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="top">
   <div class="bar">
-    <button class="logo" data-view="feed" aria-label="Back of Head Book home"><span class="logoMark">b</span><span>back of head book</span></button>
-    <div class="searchWrap"><span>⌕</span><input id="search" placeholder="Search people, posts, groups..." autocomplete="off"></div>
+    <button class="logo" data-view="feed"><span>back of head book</span></button>
+    <div class="searchWrap"><span>⌕</span><input id="search" placeholder="Search" autocomplete="off"></div>
     <nav class="topnav">
-      <button data-view="profile" class="profileLink"><span class="miniAvatar">MC</span><span>Max</span></button>
+      <button data-view="profile" class="profileLink"><span class="miniAvatar">MC</span><span class="desktopOnly">Max</span></button>
       <button id="messages" aria-label="Messages">✉<i>2</i></button>
       <button id="alerts" aria-label="Notifications">♢<i>3</i></button>
       <button id="settings" aria-label="Settings">⚙</button>
     </nav>
   </div>
 </header>
-
-<div class="networkLine"><span></span><b>THE INTERNET, BUT SMALLER</b><span></span></div>
 
 <main>
   <aside id="left">
@@ -46,6 +45,13 @@
   <section id="content"></section>
   <aside id="right"></aside>
 </main>
+
+<nav class="bottomnav">
+  <button data-view="feed"><span>⌂</span><b>Feed</b></button>
+  <button data-view="people"><span>♙</span><b>Directory</b></button>
+  <button id="bottomTaps"><span>☝</span><b>Taps</b><i>4</i></button>
+  <button data-view="profile"><span>●</span><b>Profile</b></button>
+</nav>
 
 <div id="toast" class="toast"></div>
 <div id="modal" class="hidden">
